@@ -14,7 +14,7 @@ configurations = [
 ]
 
 #
-VISITED_IMG = pygame.image.load("Icons/visited.png")
+VISITED_IMG = pygame.image.load("AI/Icons/visited.png")
 
 #define some colors (R, G, B)
 WHITE = (255,255,255)
@@ -55,39 +55,39 @@ DUMP_TILE_X = 82
 #Icons
 
 #Map Icons
-trashCanBlue = pygame.image.load("map/blueTrash.png")
-trashCanBlack = pygame.image.load("map/blackTrash.png")
-trashCanYellow = pygame.image.load("map/yellowTrash.png")
-trashCanGreen = pygame.image.load("map/greenTrash.png")
+trashCanBlue = pygame.image.load("AI/map/blueTrash.png")
+trashCanBlack = pygame.image.load("AI/map/blackTrash.png")
+trashCanYellow = pygame.image.load("AI/map/yellowTrash.png")
+trashCanGreen = pygame.image.load("AI/map/greenTrash.png")
 
 #Obstacle Icon
-obstacle = pygame.image.load("Icons/barrier.png")
+obstacle = pygame.image.load("AI/Icons/barrier.png")
 OBSTACLES_COUNT = 20
 
 #HUD Icons
 ICON_WIDTH, ICON_HEIGHT = 30, 30
 BAR_WIDTH, BAR_HEIGHT = 50, 320
-BAR = pygame.image.load("Icons/HUD.png")
-CALENDAR = pygame.image.load("Icons/calendar.png")
+BAR = pygame.image.load("AI/Icons/HUD.png")
+CALENDAR = pygame.image.load("AI/Icons/calendar.png")
 CALENDAR = pygame.transform.scale(CALENDAR, (100, 100))
-DAY = pygame.image.load("Icons/day.png")
+DAY = pygame.image.load("AI/Icons/day.png")
 DAY = pygame.transform.scale(DAY, (100, 100))
-NIGHT = pygame.image.load("Icons/night.png")
+NIGHT = pygame.image.load("AI/Icons/night.png")
 NIGHT = pygame.transform.scale(NIGHT, (80, 80))
-NIGHT_ILLUSION = pygame.image.load("Icons/night_illusion.png")
-BILL_UNPAID = pygame.image.load("Icons/bill_not_paid.png")
+NIGHT_ILLUSION = pygame.image.load("AI/Icons/night_illusion.png")
+BILL_UNPAID = pygame.image.load("AI/Icons/bill_not_paid.png")
 BILL_UNPAID = pygame.transform.scale(BILL_UNPAID, (50, 50))
-TOO_HEAVY = pygame.image.load("Icons/too_heavy.png")
+TOO_HEAVY = pygame.image.load("AI/Icons/too_heavy.png")
 TOO_HEAVY = pygame.transform.scale(TOO_HEAVY, (65, 65))
-TRASH_FULL = pygame.image.load("Icons/trash_full.png")
+TRASH_FULL = pygame.image.load("AI/Icons/trash_full.png")
 TRASH_FULL = pygame.transform.scale(TRASH_FULL, (50, 65))
-WRONG_TRASHCAN_SIZE = pygame.image.load("Icons/wrong_size.png")
+WRONG_TRASHCAN_SIZE = pygame.image.load("AI/Icons/wrong_size.png")
 WRONG_TRASHCAN_SIZE = pygame.transform.scale(WRONG_TRASHCAN_SIZE, (50, 60))
 
 #Fonts
 
 HUD_FONT = pygame.font.SysFont("comicsans", 30)
-DUMP_FONT = pygame.font.Font("Fonts/SourceCodePro-BoldItalic.ttf", 15)
+DUMP_FONT = pygame.font.Font("AI/Fonts/SourceCodePro-BoldItalic.ttf", 15)
 
 #Trash Coordinates
 

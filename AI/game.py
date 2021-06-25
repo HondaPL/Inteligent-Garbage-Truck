@@ -28,7 +28,7 @@ class Game:
         self.trash = pg.sprite.Group()
         self.obstacle = pg.sprite.Group()
 
-        self.model = load_model('./LearningMethods/train_model.h5')
+        self.model = load_model('AI/LearningMethods/train_model.h5')
 
         self.init()
 
@@ -133,7 +133,7 @@ class Game:
         pg.display.flip()
 
     def init(self):
-        img = image.load_img('./Dataset-trashes/glass/glass (1).jpg', target_size=(512, 384))
+        img = image.load_img('AI/Dataset-trashes/glass/glass (1).jpg', target_size=(512, 384))
         img_tensor = image.img_to_array(img)
         img_tensor = numpy.expand_dims(img_tensor, axis=0)
         img_tensor /= 255.
@@ -144,7 +144,7 @@ class Game:
 
         self.pickup_states = dict()
 
-        config_dir = os.path.join( os.getcwd(), cfg)
+        config_dir = os.path.join( "AI/", cfg)
         file_name = os.path.join(config_dir, "TP-" + cfg + ".csv")
 
         with open(file_name, 'r') as file:
@@ -174,7 +174,7 @@ class Game:
         
         searcher = Search(self.map.points_grid, self)
 
-        config_dir = os.path.join( os.getcwd(), cfg)
+        config_dir = os.path.join( "AI/", cfg)
         file_name = os.path.join(config_dir, "BP-" + cfg + ".csv")
 
         # best path is gene like 0 -> 7 -> 6 -> 1 -> 2 -> 4 -> 3 -> 9 -> 0

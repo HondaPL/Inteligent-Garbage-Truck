@@ -5,7 +5,7 @@ import settings
 import trash
 import joblib
 
-filename = 'DecisionTreeFiles/decisionTree.sav'
+filename = 'AI/DecisionTreeFiles/decisionTree.sav'
 class DecisionTree():
 
     

@@ -180,7 +180,7 @@ class TiledMap:
 
     """ Function draws state of map from configuration file """
     def draw_configuration(self, cfg):
-        config_dir = os.path.join( os.getcwd(), cfg)
+        config_dir = os.path.join( "AI/", cfg)
         file_name = os.path.join(config_dir, cfg + ".csv")
 
         y = 0

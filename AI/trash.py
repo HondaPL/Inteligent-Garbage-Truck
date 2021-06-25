@@ -34,8 +34,8 @@ class Trash(pygame.sprite.Sprite):
         self.width = numpy.random.choice([30,random.randint(20, 80)], p=[0.95, 0.05])
         self.height = numpy.random.choice([120,random.randint(20, 80)], p=[0.95, 0.05])
 
-        dir = random.choice(os.listdir('./Dataset-trashes'))
-        path = './Dataset-trashes/' + dir + '/'
+        dir = random.choice(os.listdir('AI/Dataset-trashes'))
+        path = 'AI/Dataset-trashes/' + dir + '/'
         file = random.choice(os.listdir(path))
         self.img_trash = path + file                     #'./Dataset-trashes/glass/glass (3).jpg'
         self.number = 1
