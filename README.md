@@ -43,10 +43,23 @@ To solve this task we used:
 * keras library (For Neural Networks)
 
 ## Setup
-1. To run this project you need to download `python`.
+1. Run `main.py`
+2. Press `space` to start the project :)
+3. If project didn't load you need to import some libraries: like `pytorch`, `pygame`, `sklearn`, `keras` and some more. To do it a recommend to use pip eg. `pip install torch` or `pip3 install torch`.
+
 
 ## Features
-* 
+* Move garbage truck with arrow (`up` to move forward, `left` and `right` to rotate the agent).
+* Go to specific square on map by pressing left mouse button and then right mouse button. 
+* Toggle algorith from `A*` to `BFS` by pressing A.
+* Place obstacles on map by selecting square by left mouse button and then pressing `O`.
+* Place trash bins on map by selecting square by left mouse button and then pressing `T`.
+* Run whole app by pressing `space`.
+* Trash images recognition created with neural networks.
+* TSP problem solved with genetic algorith.
+* Make decission whether to pick up trash or not by many arguments.
+* Nice HUD to show all important informations to user.
+* Show trash image when collecting.
 
 ## Status
 Project is: _completed_
